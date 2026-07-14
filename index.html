@@ -1,458 +1,1389 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>UNSA Market — El marketplace seguro de la comunidad universitaria</title>
-  <meta name="description" content="UNSA Market es la app exclusiva para estudiantes de la UNSA. Compra, vende y ofrece tutorías con acceso verificado por correo @unsa.edu.pe, valoraciones reales y entrega en campus. Compra a quién confías." />
-  <meta name="theme-color" content="#52021F" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      UNSA Market — El marketplace seguro de la comunidad universitaria
+    </title>
+    <meta
+      name="description"
+      content="UNSA Market es la app exclusiva para estudiantes de la UNSA. Compra, vende y ofrece tutorías con acceso verificado por correo @unsa.edu.pe, valoraciones reales y entrega en campus. Compra a quién confías."
+    />
+    <meta name="theme-color" content="#52021F" />
 
-  <!-- Open Graph -->
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="UNSA Market — Compra a quién confías" />
-  <meta property="og:description" content="El marketplace universitario exclusivo para la comunidad UNSA. Acceso verificado, valoraciones reales y entrega en campus." />
-  <meta property="og:image" content="assets/img/icon.png" />
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="UNSA Market — Compra a quién confías" />
+    <meta
+      property="og:description"
+      content="El marketplace universitario exclusivo para la comunidad UNSA. Acceso verificado, valoraciones reales y entrega en campus."
+    />
+    <meta property="og:image" content="assets/img/icon.png" />
 
-  <link rel="icon" type="image/png" href="assets/img/icon.png" />
-  <link rel="apple-touch-icon" href="assets/img/icon.png" />
+    <link rel="icon" type="image/png" href="assets/img/icon.png" />
+    <link rel="apple-touch-icon" href="assets/img/icon.png" />
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="stylesheet" href="assets/css/styles.css" />
-</head>
-<body>
-
-  <!-- ============ NAVBAR ============ -->
-  <header class="nav" id="nav">
-    <div class="container nav-inner">
-      <a href="#top" class="brand" aria-label="UNSA Market inicio">
-        <img src="assets/img/icon.png" alt="Logo UNSA Market" />
-        <span>UNSA Market<span class="brand-sub">Marketplace universitario</span></span>
-      </a>
-
-      <nav class="nav-links" id="navLinks" aria-label="Navegación principal">
-        <a href="#caracteristicas">Características</a>
-        <a href="#accion">La app</a>
-        <a href="#como-funciona">Cómo funciona</a>
-        <a href="#planes">Planes</a>
-        <a href="#faq">FAQ</a>
-      </nav>
-
-      <div class="nav-cta">
-        <a class="gplay" href="https://play.google.com/store/apps/details?id=com.unsa.market" target="_blank" rel="noopener" aria-label="Descargar en Google Play">
-          <svg viewBox="0 0 512 512" aria-hidden="true"><path fill="#EA4335" d="M325 256 79 24C67 34 60 49 60 68v376c0 19 7 34 19 44l246-232z"/><path fill="#FBBC04" d="M404 199 326 154l-70 66 70 66 79-45c22-13 22-29-1-42z"/><path fill="#4285F4" d="M79 468c8 7 19 8 32 1l215-125-70-66L79 468z"/><path fill="#34A853" d="M326 154 111 43c-13-7-24-6-32 1l247 232 70-66z"/></svg>
-          <span class="gplay-txt"><span class="gplay-small">Disponible en</span><span class="gplay-big">Google Play</span></span>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <!-- ============ NAVBAR ============ -->
+    <header class="nav" id="nav">
+      <div class="container nav-inner">
+        <a href="#top" class="brand" aria-label="UNSA Market inicio">
+          <img src="assets/img/icon.png" alt="Logo UNSA Market" />
+          <span
+            >UNSA Market<span class="brand-sub"
+              >Marketplace universitario</span
+            ></span
+          >
         </a>
-        <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span><span></span></button>
-      </div>
-    </div>
-  </header>
 
-  <main id="top">
-
-    <!-- ============ HERO ============ -->
-    <section class="hero">
-      <div class="hero-bg"></div>
-      <div class="hero-grid-lines"></div>
-      <div class="hero-mesh mesh-1"></div>
-      <div class="hero-mesh mesh-2"></div>
-      <div class="hero-mesh mesh-3"></div>
-
-      <div class="container hero-inner">
-        <div class="hero-copy">
-          <span class="hero-badge reveal"><span class="dot"></span> Exclusivo para <b>@unsa.edu.pe</b></span>
-          <h1 class="reveal d1">Compra a quién <span class="accent text-grad">confías</span>.</h1>
-          <p class="hero-lead reveal d2">El marketplace seguro de la comunidad UNSA. Compra, vende y ofrece tutorías entre estudiantes verificados, con valoraciones reales y entrega dentro del campus.</p>
-
-          <div class="hero-actions reveal d3">
-            <a class="gplay" href="https://play.google.com/store/apps/details?id=com.unsa.market" target="_blank" rel="noopener">
-              <svg viewBox="0 0 512 512" aria-hidden="true"><path fill="#EA4335" d="M325 256 79 24C67 34 60 49 60 68v376c0 19 7 34 19 44l246-232z"/><path fill="#FBBC04" d="M404 199 326 154l-70 66 70 66 79-45c22-13 22-29-1-42z"/><path fill="#4285F4" d="M79 468c8 7 19 8 32 1l215-125-70-66L79 468z"/><path fill="#34A853" d="M326 154 111 43c-13-7-24-6-32 1l247 232 70-66z"/></svg>
-              <span class="gplay-txt"><span class="gplay-small">Descárgala en</span><span class="gplay-big">Google Play</span></span>
-            </a>
-            <a class="btn btn-ghost" href="#como-funciona">Ver cómo funciona</a>
-          </div>
-
-          <div class="hero-stats reveal d4">
-            <div class="stat"><div class="num" data-count="100" data-suffix="%">0%</div><div class="lbl">Comunidad verificada</div></div>
-            <div class="stat"><div class="num" data-count="2" data-prefix="+">0</div><div class="lbl">Feeds: Cosas y Habilidades</div></div>
-            <div class="stat"><div class="num">0<span>%</span></div><div class="lbl">Comisiones por vender</div></div>
-          </div>
-        </div>
-
-        <div class="hero-visual">
-          <div class="phone hero-phone">
-            <div class="phone-screen"><img src="assets/img/screen-feed.png" alt="Pantalla principal de UNSA Market mostrando anuncios de estudiantes" /></div>
-          </div>
-
-          <div class="hero-float float-a">
-            <div class="ic" style="background:var(--wine-100);color:var(--wine-600)">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 12l2 2 4-4"/><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-            </div>
-            <div><div class="t1">Identidad verificada</div><div class="t2">Solo correo institucional</div></div>
-          </div>
-
-          <div class="hero-float float-b">
-            <div class="ic" style="background:var(--gold-100);color:var(--gold-600)">
-              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.7-5.2 4.6 1.5 6.7L12 17.8 5.9 20.3l1.5-6.7L2.2 9l6.9-.7z"/></svg>
-            </div>
-            <div><div class="t1">4.8 ★ valoración</div><div class="t2">Reputación transparente</div></div>
-          </div>
-
-          <div class="hero-float float-c">
-            <div class="ic" style="background:var(--wine-100);color:var(--wine-600)">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-            </div>
-            <div><div class="t1">Chat interno</div><div class="t2">Sin exponer tu teléfono</div></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ MARQUEE ============ -->
-    <div class="marquee-wrap reveal">
-      <div class="container"><p class="marquee-label">Todo lo que circula dentro del campus</p></div>
-      <div class="marquee" id="marquee">
-        <!-- filled by JS (duplicated for seamless loop) -->
-      </div>
-    </div>
-
-    <!-- ============ PROBLEMA / SOLUCIÓN ============ -->
-    <section class="section-pad">
-      <div class="container">
-        <div class="section-head center reveal">
-          <span class="eyebrow">El problema real</span>
-          <h2 class="section-title">Del caos de los grupos de WhatsApp<br>a un ecosistema <span class="text-wine">seguro y ordenado</span></h2>
-          <p class="section-sub">El comercio estudiantil vive hoy en chats saturados y publicaciones anónimas. UNSA Market convierte cada fricción en una solución.</p>
-        </div>
-
-        <div class="split">
-          <div class="split-card problem reveal">
-            <h3>😵‍💫 El problema actual</h3>
-            <div class="pain">
-              <div class="pi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M10.3 3.3 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.3a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 17h.01"/></svg></div>
-              <div><div class="pt">Desconfianza por anonimato</div><div class="pd">Miedo a estafas en Facebook Marketplace y perfiles falsos.</div></div>
-            </div>
-            <div class="pain">
-              <div class="pi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
-              <div><div class="pt">Publicaciones perdidas</div><div class="pd">Ventas que se pierden entre avisos académicos y memes.</div></div>
-            </div>
-            <div class="pain">
-              <div class="pi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></div>
-              <div><div class="pt">Talento invisible</div><div class="pd">Estudiantes con skills técnicas sin un canal formal para ofrecerlas.</div></div>
-            </div>
-          </div>
-
-          <div class="split-arrow reveal d1">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-          </div>
-
-          <div class="split-card solution reveal d2">
-            <h3>✨ Nuestra solución</h3>
-            <div class="pain">
-              <div class="pi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></div>
-              <div><div class="pt">Acceso exclusivo .edu</div><div class="pd">Registro únicamente con correo @unsa.edu.pe. Cero estafadores externos.</div></div>
-            </div>
-            <div class="pain">
-              <div class="pi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></div>
-              <div><div class="pt">Feed estructurado y doble</div><div class="pd">Separación clara entre "Cosas" (productos) y "Habilidades" (tutorías).</div></div>
-            </div>
-            <div class="pain">
-              <div class="pi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15 8.5 22 9.3 17 14 18.2 21 12 17.7 5.8 21 7 14 2 9.3 9 8.5"/></svg></div>
-              <div><div class="pt">Reputación transparente</div><div class="pd">Sistema de valoraciones público que valida a cada vendedor y tutor.</div></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ CARACTERÍSTICAS ============ -->
-    <section class="section-pad" id="caracteristicas">
-      <div class="container">
-        <div class="section-head center reveal">
-          <span class="eyebrow">Core features</span>
-          <h2 class="section-title">Todo lo que necesitas para<br>comerciar <span class="text-wine">con confianza</span></h2>
-          <p class="section-sub">Seis funcionalidades diseñadas alrededor de una sola idea: que cada intercambio dentro del campus sea seguro y sin fricción.</p>
-        </div>
-
-        <div class="features-grid">
-          <article class="feature reveal">
-            <span class="fnum">01</span>
-            <div class="fic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><circle cx="8" cy="12" r="2.4"/><path d="M14 10h5M14 14h5M5.5 17c.6-1.4 1.9-2 2.5-2s1.9.6 2.5 2"/></svg></div>
-            <h3>Registro .edu</h3>
-            <p>Verificación de identidad obligatoria con tu correo institucional. Máxima seguridad desde el primer acceso.</p>
-          </article>
-
-          <article class="feature reveal d1">
-            <span class="fnum">02</span>
-            <div class="fic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="8" height="16" rx="1.5"/><rect x="13" y="4" width="8" height="16" rx="1.5"/><path d="M6 8h2M16 8h2"/></svg></div>
-            <h3>Feed Doble</h3>
-            <p>División inteligente entre "Cosas" (objetos físicos) y "Habilidades" (servicios académicos y tutorías).</p>
-          </article>
-
-          <article class="feature reveal d2">
-            <span class="fnum">03</span>
-            <div class="fic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1 3 3 6 3s6-2 6-3v-5"/></svg></div>
-            <h3>Perfil de Tutor</h3>
-            <p>Espacio dedicado con áreas de dominio, semestre cursado y tarifa por hora para asesorías académicas.</p>
-          </article>
-
-          <article class="feature reveal">
-            <span class="fnum">04</span>
-            <div class="fic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
-            <h3>Chat Interno</h3>
-            <p>Comunicación centralizada con historial como respaldo, sin exponer tu número de teléfono personal.</p>
-          </article>
-
-          <article class="feature reveal d1">
-            <span class="fnum">05</span>
-            <div class="fic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg></div>
-            <h3>Modo Intercambio</h3>
-            <p>Facilita trueques directos entre estudiantes —libros por apuntes— sin necesidad de usar dinero.</p>
-          </article>
-
-          <article class="feature reveal d2">
-            <span class="fnum">06</span>
-            <div class="fic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15 8.5 22 9.3 17 14 18.2 21 12 17.7 5.8 21 7 14 2 9.3 9 8.5"/></svg></div>
-            <h3>Sistema de Valoraciones</h3>
-            <p>Calificaciones y reseñas post-transacción que construyen reputación real y responsabilidad mutua.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ SHOWCASE (capturas reales) ============ -->
-    <section class="section-pad showcase" id="accion">
-      <div class="showcase-mesh sm-1"></div>
-      <div class="showcase-mesh sm-2"></div>
-      <div class="container">
-        <div class="section-head center reveal">
-          <span class="eyebrow">La app en acción</span>
-          <h2 class="section-title">Una experiencia pensada<br>para estudiantes</h2>
-          <p class="section-sub">Interfaz limpia, publicación en segundos y toda la confianza a la vista. Estas son pantallas reales de UNSA Market.</p>
-        </div>
-
-        <div class="shots">
-          <div class="shot reveal d1">
-            <div class="phone"><div class="phone-screen"><img src="assets/img/screen-login.png" alt="Pantalla de acceso seguro con correo institucional" loading="lazy" /></div></div>
-            <div class="cap"><div class="ct">Acceso seguro</div><div class="cd">Solo con tu correo @unsa.edu.pe</div></div>
-          </div>
-          <div class="shot mid reveal d2">
-            <div class="phone"><div class="phone-screen"><img src="assets/img/screen-feed.png" alt="Feed principal con anuncios categorizados" loading="lazy" /></div></div>
-            <div class="cap"><div class="ct">Feed principal</div><div class="cd">Explora y publica con el botón flotante</div></div>
-          </div>
-          <div class="shot reveal d3">
-            <div class="phone"><div class="phone-screen"><img src="assets/img/screen-detail.png" alt="Detalle de producto con valoraciones del vendedor" loading="lazy" /></div></div>
-            <div class="cap"><div class="ct">Perfil y reseñas</div><div class="cd">Reputación real antes de comprar</div></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ CÓMO FUNCIONA ============ -->
-    <section class="section-pad" id="como-funciona">
-      <div class="container">
-        <div class="section-head center reveal">
-          <span class="eyebrow">Cómo funciona</span>
-          <h2 class="section-title">De la búsqueda a la valoración<br>en <span class="text-wine">6 pasos</span></h2>
-          <p class="section-sub">Un flujo circular donde cada transacción exitosa fortalece la reputación de toda la comunidad.</p>
-        </div>
-
-        <div class="steps">
-          <div class="step reveal"><div class="snum">1</div><span class="sline"></span><h3>Regístrate con tu .edu</h3><p>Ingresa con tu correo @unsa.edu.pe y confirma el enlace de verificación en tu bandeja.</p></div>
-          <div class="step reveal d1"><div class="snum">2</div><span class="sline"></span><h3>Explora el feed</h3><p>Filtra entre "Cosas" y "Habilidades", busca productos, libros o tutorías por categoría.</p></div>
-          <div class="step reveal d2"><div class="snum">3</div><h3>Publica o contacta</h3><p>Sube tu anuncio con foto, precio y categoría, o revisa el perfil del vendedor.</p></div>
-          <div class="step reveal"><div class="snum">4</div><span class="sline"></span><h3>Chatea de forma segura</h3><p>Acuerda precio y punto de encuentro en el campus mediante el chat interno.</p></div>
-          <div class="step reveal d1"><div class="snum">5</div><span class="sline"></span><h3>Completa la entrega</h3><p>Encuéntrense en la biblioteca, cafetín o pabellón. Todo dentro de la universidad.</p></div>
-          <div class="step reveal d2"><div class="snum">6</div><h3>Deja tu valoración</h3><p>Califica con estrellas y comentarios. Construyes reputación y ayudas a la comunidad.</p></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ BENEFICIOS ============ -->
-    <section class="section-pad benefits">
-      <div class="container">
-        <div class="benefits-grid">
-          <div>
-            <div class="section-head reveal">
-              <span class="eyebrow">Beneficios</span>
-              <h2 class="section-title">Hecho por y para<br>estudiantes agustinos</h2>
-              <p class="section-sub">Más que una app de compraventa: un ecosistema que hace circular el dinero dentro de la comunidad universitaria.</p>
-            </div>
-
-            <div class="benefit reveal d1">
-              <div class="bic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
-              <div><h3>Seguridad ante todo</h3><p>Al eliminar el acceso público, se erradica el riesgo de estafadores externos. Interactúas solo con compañeros reales.</p></div>
-            </div>
-            <div class="benefit reveal d2">
-              <div class="bic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
-              <div><h3>Economía colaborativa</h3><p>El dinero de los estudiantes circula y apoya a otros estudiantes, fortaleciendo el ecosistema UNSA.</p></div>
-            </div>
-            <div class="benefit reveal d3">
-              <div class="bic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
-              <div><h3>Cercanía en campus</h3><p>Puntos de entrega y ejecución de servicios dentro de las áreas académicas: ingenierías, sociales, biomédicas.</p></div>
-            </div>
-          </div>
-
-          <div class="benefits-visual reveal d2">
-            <div class="phone"><div class="phone-screen"><img src="assets/img/screen-detail.png" alt="Perfil de vendedor con valoraciones en UNSA Market" loading="lazy" /></div></div>
-            <div class="benefits-card bc-1">
-              <div class="stars">★★★★★</div>
-              <div class="bcn">Vendedor verificado</div>
-              <div class="bcd">Ingeniería · 8.º semestre</div>
-            </div>
-            <div class="benefits-card bc-2">
-              <div class="bcn">Entrega en campus 📍</div>
-              <div class="bcd">Biblioteca central</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ PLANES ============ -->
-    <section class="section-pad" id="planes">
-      <div class="container">
-        <div class="section-head center reveal">
-          <span class="eyebrow">Planes</span>
-          <h2 class="section-title">Empieza gratis. Destaca con <span class="text-wine">Pro</span>.</h2>
-          <p class="section-sub">Usa toda la plataforma sin pagar nada. Y cuando quieras vender más rápido, hazte notar con el plan Pro.</p>
-        </div>
-
-        <div class="pricing-grid">
-          <!-- FREE -->
-          <div class="plan free reveal d1">
-            <div class="plan-name">
-              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--wine-600)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 12v10H4V12"/><rect x="2" y="7" width="20" height="5" rx="1"/><path d="M12 22V7M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7zM12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/></svg>
-              Gratuito
-            </div>
-            <div class="plan-price"><span class="amt">S/ 0</span><span class="per">/ siempre</span></div>
-            <p class="plan-tag">Acceso completo a la plataforma, con anuncios visibles dentro de la app.</p>
-            <ul class="plan-feats">
-              <li><span class="pf-ic pf-yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Registro verificado con correo @unsa.edu.pe</li>
-              <li><span class="pf-ic pf-yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Feed doble: Cosas y Habilidades</li>
-              <li><span class="pf-ic pf-yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Publicaciones ilimitadas</li>
-              <li><span class="pf-ic pf-yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Chat interno y valoraciones</li>
-              <li class="muted"><span class="pf-ic pf-no"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span> Con anuncios dentro de la app</li>
-              <li class="muted"><span class="pf-ic pf-no"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span> Sin publicaciones destacadas</li>
-            </ul>
-            <a class="btn btn-block" href="https://play.google.com/store/apps/details?id=com.unsa.market" target="_blank" rel="noopener">Empezar gratis</a>
-          </div>
-
-          <!-- PRO -->
-          <div class="plan pro reveal d2">
-            <span class="plan-badge">★ Recomendado</span>
-            <div class="plan-name">
-              <svg class="crown" viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M2 18h20l-1.5-9-5 4L12 6 8.5 13l-5-4z"/></svg>
-              Pro
-            </div>
-            <div class="plan-price"><span class="amt">S/ 9.90</span><span class="per">/ mes</span></div>
-            <p class="plan-tag">Vende más rápido, gana visibilidad y navega sin distracciones.</p>
-            <ul class="plan-feats">
-              <li><span class="pf-ic pf-yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> <b>Todo lo del plan Gratuito, incluido</b></li>
-              <li><span class="pf-ic pf-yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> <b>Sin anuncios:</b> experiencia 100% limpia</li>
-              <li><span class="pf-ic pf-yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> <b>Destaca tus publicaciones</b> en el feed</li>
-              <li><span class="pf-ic pf-yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Mayor visibilidad y alcance en tus anuncios</li>
-              <li><span class="pf-ic pf-yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Insignia Pro que refuerza tu confianza</li>
-              <li><span class="pf-ic pf-yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Prioridad en resultados de búsqueda</li>
-            </ul>
-            <a class="btn btn-gold btn-block" href="https://play.google.com/store/apps/details?id=com.unsa.market" target="_blank" rel="noopener">Hazte Pro</a>
-          </div>
-        </div>
-        <p class="pricing-note">Precio del plan Pro referencial y configurable · Sin permanencia · Cancela cuando quieras</p>
-      </div>
-    </section>
-
-    <!-- ============ FAQ ============ -->
-    <section class="section-pad" id="faq">
-      <div class="container">
-        <div class="section-head center reveal">
-          <span class="eyebrow">Preguntas frecuentes</span>
-          <h2 class="section-title">Resolvemos tus dudas</h2>
-        </div>
-
-        <div class="faq-wrap">
-          <div class="faq-item reveal">
-            <button class="faq-q" aria-expanded="false"><span>¿Quién puede usar UNSA Market?</span><span class="fq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
-            <div class="faq-a"><p>Exclusivamente estudiantes de la Universidad Nacional de San Agustín. El registro solo es posible con un correo institucional válido <b>@unsa.edu.pe</b>, lo que garantiza una comunidad 100% verificada.</p></div>
-          </div>
-          <div class="faq-item reveal">
-            <button class="faq-q" aria-expanded="false"><span>¿La aplicación tiene algún costo?</span><span class="fq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
-            <div class="faq-a"><p>No. Puedes descargarla y usarla gratis con acceso completo a todas las funciones. El plan gratuito incluye anuncios dentro de la app; el plan Pro los elimina y te permite destacar tus publicaciones.</p></div>
-          </div>
-          <div class="faq-item reveal">
-            <button class="faq-q" aria-expanded="false"><span>¿Qué diferencia al plan Pro del gratuito?</span><span class="fq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
-            <div class="faq-a"><p>El plan Pro elimina los anuncios y te da la posibilidad de destacar tus publicaciones para obtener mayor visibilidad y alcance, además de una insignia Pro y prioridad en las búsquedas. Ideal si vendes con frecuencia u ofreces tutorías.</p></div>
-          </div>
-          <div class="faq-item reveal">
-            <button class="faq-q" aria-expanded="false"><span>¿Cómo sé si un vendedor es confiable?</span><span class="fq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
-            <div class="faq-a"><p>Cada perfil está vinculado al nombre real del estudiante y a su historial de ventas. El sistema de valoraciones con estrellas y reseñas escritas de otros compañeros te permite validar la reputación antes de concretar cualquier transacción.</p></div>
-          </div>
-          <div class="faq-item reveal">
-            <button class="faq-q" aria-expanded="false"><span>¿Puedo ofrecer tutorías y no solo productos?</span><span class="fq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
-            <div class="faq-a"><p>Sí. El "Feed Doble" separa las "Cosas" (objetos físicos) de las "Habilidades" (servicios académicos). Puedes crear un perfil de tutor con tus áreas de dominio, semestre cursado y tarifa por hora.</p></div>
-          </div>
-          <div class="faq-item reveal">
-            <button class="faq-q" aria-expanded="false"><span>¿Dónde se realizan las entregas?</span><span class="fq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></button>
-            <div class="faq-a"><p>Dentro del propio campus. Los intercambios se coordinan por el chat interno y se ejecutan en puntos seguros como la biblioteca, los cafetines o los pabellones de tu facultad.</p></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ CTA FINAL ============ -->
-    <section class="section-pad cta-band">
-      <div class="container">
-        <div class="cta-inner reveal">
-          <h2>Tu marketplace universitario<br>te está esperando</h2>
-          <p>Únete a la comunidad de estudiantes que compran, venden y aprenden con confianza. Descarga UNSA Market hoy.</p>
-          <div class="cta-actions">
-            <a class="gplay" href="https://play.google.com/store/apps/details?id=com.unsa.market" target="_blank" rel="noopener">
-              <svg viewBox="0 0 512 512" aria-hidden="true"><path fill="#EA4335" d="M325 256 79 24C67 34 60 49 60 68v376c0 19 7 34 19 44l246-232z"/><path fill="#FBBC04" d="M404 199 326 154l-70 66 70 66 79-45c22-13 22-29-1-42z"/><path fill="#4285F4" d="M79 468c8 7 19 8 32 1l215-125-70-66L79 468z"/><path fill="#34A853" d="M326 154 111 43c-13-7-24-6-32 1l247 232 70-66z"/></svg>
-              <span class="gplay-txt"><span class="gplay-small">Disponible en</span><span class="gplay-big">Google Play</span></span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- ============ FOOTER ============ -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-top">
-        <div>
-          <a href="#top" class="brand"><img src="assets/img/icon.png" alt="UNSA Market" /><span>UNSA Market<span class="brand-sub">Marketplace universitario</span></span></a>
-          <p class="footer-about">El ecosistema seguro de compra, venta y tutorías exclusivo para la comunidad de la Universidad Nacional de San Agustín. Compra a quién confías.</p>
-        </div>
-        <div class="footer-col">
-          <h4>Producto</h4>
+        <nav class="nav-links" id="navLinks" aria-label="Navegación principal">
           <a href="#caracteristicas">Características</a>
           <a href="#accion">La app</a>
           <a href="#como-funciona">Cómo funciona</a>
           <a href="#planes">Planes</a>
-        </div>
-        <div class="footer-col">
-          <h4>Recursos</h4>
-          <a href="#faq">Preguntas frecuentes</a>
-          <a href="#planes">Plan Pro</a>
-          <a href="https://play.google.com/store/apps/details?id=com.unsa.market" target="_blank" rel="noopener">Google Play</a>
-        </div>
-        <div class="footer-col">
-          <h4>Descarga</h4>
-          <a href="https://play.google.com/store/apps/details?id=com.unsa.market" target="_blank" rel="noopener">Android</a>
-          <a href="#top">Volver arriba</a>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <span>© <span id="year">2026</span> UNSA Market · Arequipa, Perú</span>
-        <span class="made">Hecho para la comunidad agustina 🎓</span>
-      </div>
-    </div>
-  </footer>
+          <a href="#faq">FAQ</a>
+        </nav>
 
-  <script src="assets/js/main.js" defer></script>
-</body>
+        <div class="nav-cta">
+          <a
+            class="gplay"
+            href="https://play.google.com/store/apps/details?id=com.unsa.market"
+            target="_blank"
+            rel="noopener"
+            aria-label="Descargar en Google Play"
+          >
+            <svg viewBox="0 0 512 512" aria-hidden="true">
+              <path
+                fill="#EA4335"
+                d="M325 256 79 24C67 34 60 49 60 68v376c0 19 7 34 19 44l246-232z"
+              />
+              <path
+                fill="#FBBC04"
+                d="M404 199 326 154l-70 66 70 66 79-45c22-13 22-29-1-42z"
+              />
+              <path
+                fill="#4285F4"
+                d="M79 468c8 7 19 8 32 1l215-125-70-66L79 468z"
+              />
+              <path
+                fill="#34A853"
+                d="M326 154 111 43c-13-7-24-6-32 1l247 232 70-66z"
+              />
+            </svg>
+            <span class="gplay-txt"
+              ><span class="gplay-small">Disponible en</span
+              ><span class="gplay-big">Google Play</span></span
+            >
+          </a>
+          <button
+            class="nav-toggle"
+            id="navToggle"
+            aria-label="Abrir menú"
+            aria-expanded="false"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="top">
+      <!-- ============ HERO ============ -->
+      <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-grid-lines"></div>
+        <div class="hero-mesh mesh-1"></div>
+        <div class="hero-mesh mesh-2"></div>
+        <div class="hero-mesh mesh-3"></div>
+
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <span class="hero-badge reveal"
+              ><span class="dot"></span> Exclusivo para
+              <b>@unsa.edu.pe</b></span
+            >
+            <h1 class="reveal d1">
+              Compra a quién <span class="accent text-grad">confías</span>.
+            </h1>
+            <p class="hero-lead reveal d2">
+              El marketplace seguro de la comunidad UNSA. Compra, vende y ofrece
+              tutorías entre estudiantes verificados, con valoraciones reales y
+              entrega dentro del campus.
+            </p>
+
+            <div class="hero-actions reveal d3">
+              <a
+                class="gplay"
+                href="https://play.google.com/store/apps/details?id=com.unsa.market"
+                target="_blank"
+                rel="noopener"
+              >
+                <svg viewBox="0 0 512 512" aria-hidden="true">
+                  <path
+                    fill="#EA4335"
+                    d="M325 256 79 24C67 34 60 49 60 68v376c0 19 7 34 19 44l246-232z"
+                  />
+                  <path
+                    fill="#FBBC04"
+                    d="M404 199 326 154l-70 66 70 66 79-45c22-13 22-29-1-42z"
+                  />
+                  <path
+                    fill="#4285F4"
+                    d="M79 468c8 7 19 8 32 1l215-125-70-66L79 468z"
+                  />
+                  <path
+                    fill="#34A853"
+                    d="M326 154 111 43c-13-7-24-6-32 1l247 232 70-66z"
+                  />
+                </svg>
+                <span class="gplay-txt"
+                  ><span class="gplay-small">Descárgala en</span
+                  ><span class="gplay-big">Google Play</span></span
+                >
+              </a>
+              <a class="btn btn-ghost" href="#como-funciona"
+                >Ver cómo funciona</a
+              >
+            </div>
+
+            <div class="hero-stats reveal d4">
+              <div class="stat">
+                <div class="num" data-count="100" data-suffix="%">0%</div>
+                <div class="lbl">Comunidad verificada</div>
+              </div>
+              <div class="stat">
+                <div class="num" data-count="2" data-prefix="+">0</div>
+                <div class="lbl">Feeds: Cosas y Habilidades</div>
+              </div>
+              <div class="stat">
+                <div class="num">0<span>%</span></div>
+                <div class="lbl">Comisiones por vender</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="phone hero-phone">
+              <div class="phone-screen">
+                <img
+                  src="assets/img/screen-feed.png"
+                  alt="Pantalla principal de UNSA Market mostrando anuncios de estudiantes"
+                />
+              </div>
+            </div>
+
+            <div class="hero-float float-a">
+              <div
+                class="ic"
+                style="background: var(--wine-100); color: var(--wine-600)"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M9 12l2 2 4-4" />
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                </svg>
+              </div>
+              <div>
+                <div class="t1">Identidad verificada</div>
+                <div class="t2">Solo correo institucional</div>
+              </div>
+            </div>
+
+            <div class="hero-float float-b">
+              <div
+                class="ic"
+                style="background: var(--gold-100); color: var(--gold-600)"
+              >
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M12 2l2.9 6.3 6.9.7-5.2 4.6 1.5 6.7L12 17.8 5.9 20.3l1.5-6.7L2.2 9l6.9-.7z"
+                  />
+                </svg>
+              </div>
+              <div>
+                <div class="t1">4.8 ★ valoración</div>
+                <div class="t2">Reputación transparente</div>
+              </div>
+            </div>
+
+            <div class="hero-float float-c">
+              <div
+                class="ic"
+                style="background: var(--wine-100); color: var(--wine-600)"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
+                  />
+                </svg>
+              </div>
+              <div>
+                <div class="t1">Chat interno</div>
+                <div class="t2">Sin exponer tu teléfono</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ MARQUEE ============ -->
+      <div class="marquee-wrap reveal">
+        <div class="container">
+          <p class="marquee-label">Todo lo que circula dentro del campus</p>
+        </div>
+        <div class="marquee" id="marquee">
+          <!-- filled by JS (duplicated for seamless loop) -->
+        </div>
+      </div>
+
+      <!-- ============ PROBLEMA / SOLUCIÓN ============ -->
+      <section class="section-pad">
+        <div class="container">
+          <div class="section-head center reveal">
+            <span class="eyebrow">El problema real</span>
+            <h2 class="section-title">
+              Del caos de los grupos de WhatsApp<br />a un ecosistema
+              <span class="text-wine">seguro y ordenado</span>
+            </h2>
+            <p class="section-sub">
+              El comercio estudiantil vive hoy en chats saturados y
+              publicaciones anónimas. UNSA Market convierte cada fricción en una
+              solución.
+            </p>
+          </div>
+
+          <div class="split">
+            <div class="split-card problem reveal">
+              <h3>😵‍💫 El problema actual</h3>
+              <div class="pain">
+                <div class="pi">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M10.3 3.3 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.3a2 2 0 0 0-3.4 0z"
+                    />
+                    <path d="M12 9v4M12 17h.01" />
+                  </svg>
+                </div>
+                <div>
+                  <div class="pt">Desconfianza por anonimato</div>
+                  <div class="pd">
+                    Miedo a estafas en Facebook Marketplace y perfiles falsos.
+                  </div>
+                </div>
+              </div>
+              <div class="pain">
+                <div class="pi">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <div class="pt">Publicaciones perdidas</div>
+                  <div class="pd">
+                    Ventas que se pierden entre avisos académicos y memes.
+                  </div>
+                </div>
+              </div>
+              <div class="pain">
+                <div class="pi">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+                    <path
+                      d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <div class="pt">Talento invisible</div>
+                  <div class="pd">
+                    Estudiantes con skills técnicas sin un canal formal para
+                    ofrecerlas.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="split-arrow reveal d1">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
+            </div>
+
+            <div class="split-card solution reveal d2">
+              <h3>✨ Nuestra solución</h3>
+              <div class="pain">
+                <div class="pi">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                    <path d="M9 12l2 2 4-4" />
+                  </svg>
+                </div>
+                <div>
+                  <div class="pt">Acceso exclusivo .edu</div>
+                  <div class="pd">
+                    Registro únicamente con correo @unsa.edu.pe. Cero
+                    estafadores externos.
+                  </div>
+                </div>
+              </div>
+              <div class="pain">
+                <div class="pi">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <rect x="3" y="3" width="7" height="7" rx="1.5" />
+                    <rect x="14" y="3" width="7" height="7" rx="1.5" />
+                    <rect x="3" y="14" width="7" height="7" rx="1.5" />
+                    <rect x="14" y="14" width="7" height="7" rx="1.5" />
+                  </svg>
+                </div>
+                <div>
+                  <div class="pt">Feed estructurado y doble</div>
+                  <div class="pd">
+                    Separación clara entre "Cosas" (productos) y "Habilidades"
+                    (tutorías).
+                  </div>
+                </div>
+              </div>
+              <div class="pain">
+                <div class="pi">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <polygon
+                      points="12 2 15 8.5 22 9.3 17 14 18.2 21 12 17.7 5.8 21 7 14 2 9.3 9 8.5"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <div class="pt">Reputación transparente</div>
+                  <div class="pd">
+                    Sistema de valoraciones público que valida a cada vendedor y
+                    tutor.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ CARACTERÍSTICAS ============ -->
+      <section class="section-pad" id="caracteristicas">
+        <div class="container">
+          <div class="section-head center reveal">
+            <span class="eyebrow">Core features</span>
+            <h2 class="section-title">
+              Todo lo que necesitas para<br />comerciar
+              <span class="text-wine">con confianza</span>
+            </h2>
+            <p class="section-sub">
+              Seis funcionalidades diseñadas alrededor de una sola idea: que
+              cada intercambio dentro del campus sea seguro y sin fricción.
+            </p>
+          </div>
+
+          <div class="features-grid">
+            <article class="feature reveal">
+              <span class="fnum">01</span>
+              <div class="fic">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <rect x="2" y="4" width="20" height="16" rx="2" />
+                  <circle cx="8" cy="12" r="2.4" />
+                  <path
+                    d="M14 10h5M14 14h5M5.5 17c.6-1.4 1.9-2 2.5-2s1.9.6 2.5 2"
+                  />
+                </svg>
+              </div>
+              <h3>Registro .edu</h3>
+              <p>
+                Verificación de identidad obligatoria con tu correo
+                institucional. Máxima seguridad desde el primer acceso.
+              </p>
+            </article>
+
+            <article class="feature reveal d1">
+              <span class="fnum">02</span>
+              <div class="fic">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <rect x="3" y="4" width="8" height="16" rx="1.5" />
+                  <rect x="13" y="4" width="8" height="16" rx="1.5" />
+                  <path d="M6 8h2M16 8h2" />
+                </svg>
+              </div>
+              <h3>Feed Doble</h3>
+              <p>
+                División inteligente entre "Cosas" (objetos físicos) y
+                "Habilidades" (servicios académicos y tutorías).
+              </p>
+            </article>
+
+            <article class="feature reveal d2">
+              <span class="fnum">03</span>
+              <div class="fic">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M22 10 12 5 2 10l10 5 10-5z" />
+                  <path d="M6 12v5c0 1 3 3 6 3s6-2 6-3v-5" />
+                </svg>
+              </div>
+              <h3>Perfil de Tutor</h3>
+              <p>
+                Espacio dedicado con áreas de dominio, semestre cursado y tarifa
+                por hora para asesorías académicas.
+              </p>
+            </article>
+
+            <article class="feature reveal">
+              <span class="fnum">04</span>
+              <div class="fic">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
+                  />
+                </svg>
+              </div>
+              <h3>Chat Interno</h3>
+              <p>
+                Comunicación centralizada con historial como respaldo, sin
+                exponer tu número de teléfono personal.
+              </p>
+            </article>
+
+            <article class="feature reveal d1">
+              <span class="fnum">05</span>
+              <div class="fic">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <polyline points="17 1 21 5 17 9" />
+                  <path d="M3 11V9a4 4 0 0 1 4-4h14" />
+                  <polyline points="7 23 3 19 7 15" />
+                  <path d="M21 13v2a4 4 0 0 1-4 4H3" />
+                </svg>
+              </div>
+              <h3>Modo Intercambio</h3>
+              <p>
+                Facilita trueques directos entre estudiantes —libros por
+                apuntes— sin necesidad de usar dinero.
+              </p>
+            </article>
+
+            <article class="feature reveal d2">
+              <span class="fnum">06</span>
+              <div class="fic">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <polygon
+                    points="12 2 15 8.5 22 9.3 17 14 18.2 21 12 17.7 5.8 21 7 14 2 9.3 9 8.5"
+                  />
+                </svg>
+              </div>
+              <h3>Sistema de Valoraciones</h3>
+              <p>
+                Calificaciones y reseñas post-transacción que construyen
+                reputación real y responsabilidad mutua.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ SHOWCASE (capturas reales) ============ -->
+      <section class="section-pad showcase" id="accion">
+        <div class="showcase-mesh sm-1"></div>
+        <div class="showcase-mesh sm-2"></div>
+        <div class="container">
+          <div class="section-head center reveal">
+            <span class="eyebrow">La app en acción</span>
+            <h2 class="section-title">
+              Una experiencia pensada<br />para estudiantes
+            </h2>
+            <p class="section-sub">
+              Interfaz limpia, publicación en segundos y toda la confianza a la
+              vista. Estas son pantallas reales de UNSA Market.
+            </p>
+          </div>
+
+          <div class="shots">
+            <div class="shot reveal d1">
+              <div class="phone">
+                <div class="phone-screen">
+                  <img
+                    src="assets/img/screen-login.png"
+                    alt="Pantalla de acceso seguro con correo institucional"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+              <div class="cap">
+                <div class="ct">Acceso seguro</div>
+                <div class="cd">Solo con tu correo @unsa.edu.pe</div>
+              </div>
+            </div>
+            <div class="shot mid reveal d2">
+              <div class="phone">
+                <div class="phone-screen">
+                  <img
+                    src="assets/img/screen-feed.png"
+                    alt="Feed principal con anuncios categorizados"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+              <div class="cap">
+                <div class="ct">Feed principal</div>
+                <div class="cd">Explora y publica con el botón flotante</div>
+              </div>
+            </div>
+            <div class="shot reveal d3">
+              <div class="phone">
+                <div class="phone-screen">
+                  <img
+                    src="assets/img/screen-detail.png"
+                    alt="Detalle de producto con valoraciones del vendedor"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+              <div class="cap">
+                <div class="ct">Perfil y reseñas</div>
+                <div class="cd">Reputación real antes de comprar</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ CÓMO FUNCIONA ============ -->
+      <section class="section-pad" id="como-funciona">
+        <div class="container">
+          <div class="section-head center reveal">
+            <span class="eyebrow">Cómo funciona</span>
+            <h2 class="section-title">
+              De la búsqueda a la valoración<br />en
+              <span class="text-wine">6 pasos</span>
+            </h2>
+            <p class="section-sub">
+              Un flujo circular donde cada transacción exitosa fortalece la
+              reputación de toda la comunidad.
+            </p>
+          </div>
+
+          <div class="steps">
+            <div class="step reveal">
+              <div class="snum">1</div>
+              <span class="sline"></span>
+              <h3>Regístrate con tu .edu</h3>
+              <p>
+                Ingresa con tu correo @unsa.edu.pe y confirma el enlace de
+                verificación en tu bandeja.
+              </p>
+            </div>
+            <div class="step reveal d1">
+              <div class="snum">2</div>
+              <span class="sline"></span>
+              <h3>Explora el feed</h3>
+              <p>
+                Filtra entre "Cosas" y "Habilidades", busca productos, libros o
+                tutorías por categoría.
+              </p>
+            </div>
+            <div class="step reveal d2">
+              <div class="snum">3</div>
+              <h3>Publica o contacta</h3>
+              <p>
+                Sube tu anuncio con foto, precio y categoría, o revisa el perfil
+                del vendedor.
+              </p>
+            </div>
+            <div class="step reveal">
+              <div class="snum">4</div>
+              <span class="sline"></span>
+              <h3>Chatea de forma segura</h3>
+              <p>
+                Acuerda precio y punto de encuentro en el campus mediante el
+                chat interno.
+              </p>
+            </div>
+            <div class="step reveal d1">
+              <div class="snum">5</div>
+              <span class="sline"></span>
+              <h3>Completa la entrega</h3>
+              <p>
+                Encuéntrense en la biblioteca, cafetín o pabellón. Todo dentro
+                de la universidad.
+              </p>
+            </div>
+            <div class="step reveal d2">
+              <div class="snum">6</div>
+              <h3>Deja tu valoración</h3>
+              <p>
+                Califica con estrellas y comentarios. Construyes reputación y
+                ayudas a la comunidad.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ BENEFICIOS ============ -->
+      <section class="section-pad benefits">
+        <div class="container">
+          <div class="benefits-grid">
+            <div>
+              <div class="section-head reveal">
+                <span class="eyebrow">Beneficios</span>
+                <h2 class="section-title">
+                  Hecho por y para<br />estudiantes agustinos
+                </h2>
+                <p class="section-sub">
+                  Más que una app de compraventa: un ecosistema que hace
+                  circular el dinero dentro de la comunidad universitaria.
+                </p>
+              </div>
+
+              <div class="benefit reveal d1">
+                <div class="bic">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3>Seguridad ante todo</h3>
+                  <p>
+                    Al eliminar el acceso público, se erradica el riesgo de
+                    estafadores externos. Interactúas solo con compañeros
+                    reales.
+                  </p>
+                </div>
+              </div>
+              <div class="benefit reveal d2">
+                <div class="bic">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <h3>Economía colaborativa</h3>
+                  <p>
+                    El dinero de los estudiantes circula y apoya a otros
+                    estudiantes, fortaleciendo el ecosistema UNSA.
+                  </p>
+                </div>
+              </div>
+              <div class="benefit reveal d3">
+                <div class="bic">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z" />
+                    <circle cx="12" cy="10" r="3" />
+                  </svg>
+                </div>
+                <div>
+                  <h3>Cercanía en campus</h3>
+                  <p>
+                    Puntos de entrega y ejecución de servicios dentro de las
+                    áreas académicas: ingenierías, sociales, biomédicas.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="benefits-visual reveal d2">
+              <div class="phone">
+                <div class="phone-screen">
+                  <img
+                    src="assets/img/screen-detail.png"
+                    alt="Perfil de vendedor con valoraciones en UNSA Market"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+              <div class="benefits-card bc-1">
+                <div class="stars">★★★★★</div>
+                <div class="bcn">Vendedor verificado</div>
+                <div class="bcd">Ingeniería · 8.º semestre</div>
+              </div>
+              <div class="benefits-card bc-2">
+                <div class="bcn">Entrega en campus 📍</div>
+                <div class="bcd">Biblioteca central</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ PLANES ============ -->
+      <section class="section-pad" id="planes">
+        <div class="container">
+          <div class="section-head center reveal">
+            <span class="eyebrow">Planes</span>
+            <h2 class="section-title">
+              Empieza gratis. Destaca con <span class="text-wine">Pro</span>.
+            </h2>
+            <p class="section-sub">
+              Usa toda la plataforma sin pagar nada. Y cuando quieras vender más
+              rápido, hazte notar con el plan Pro.
+            </p>
+          </div>
+
+          <div class="pricing-grid">
+            <!-- FREE -->
+            <div class="plan free reveal d1">
+              <div class="plan-name">
+                <svg
+                  viewBox="0 0 24 24"
+                  width="20"
+                  height="20"
+                  fill="none"
+                  stroke="var(--wine-600)"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M20 12v10H4V12" />
+                  <rect x="2" y="7" width="20" height="5" rx="1" />
+                  <path
+                    d="M12 22V7M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7zM12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"
+                  />
+                </svg>
+                Gratuito
+              </div>
+              <div class="plan-price">
+                <span class="amt">S/ 0</span><span class="per">/ siempre</span>
+              </div>
+              <p class="plan-tag">
+                Acceso completo a la plataforma, con anuncios visibles dentro de
+                la app.
+              </p>
+              <ul class="plan-feats">
+                <li>
+                  <span class="pf-ic pf-yes"
+                    ><svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <polyline points="20 6 9 17 4 12" /></svg
+                  ></span>
+                  Registro verificado con correo @unsa.edu.pe
+                </li>
+                <li>
+                  <span class="pf-ic pf-yes"
+                    ><svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <polyline points="20 6 9 17 4 12" /></svg
+                  ></span>
+                  Feed doble: Cosas y Habilidades
+                </li>
+                <li>
+                  <span class="pf-ic pf-yes"
+                    ><svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <polyline points="20 6 9 17 4 12" /></svg
+                  ></span>
+                  Publicaciones ilimitadas
+                </li>
+                <li>
+                  <span class="pf-ic pf-yes"
+                    ><svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <polyline points="20 6 9 17 4 12" /></svg
+                  ></span>
+                  Chat interno y valoraciones
+                </li>
+                <li class="muted">
+                  <span class="pf-ic pf-no"
+                    ><svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <line x1="18" y1="6" x2="6" y2="18" />
+                      <line x1="6" y1="6" x2="18" y2="18" /></svg
+                  ></span>
+                  Con anuncios dentro de la app
+                </li>
+                <li class="muted">
+                  <span class="pf-ic pf-no"
+                    ><svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <line x1="18" y1="6" x2="6" y2="18" />
+                      <line x1="6" y1="6" x2="18" y2="18" /></svg
+                  ></span>
+                  Sin publicaciones destacadas
+                </li>
+              </ul>
+              <a
+                class="btn btn-block"
+                href="https://play.google.com/store/apps/details?id=com.unsa.market"
+                target="_blank"
+                rel="noopener"
+                >Empezar gratis</a
+              >
+            </div>
+
+            <!-- PRO -->
+            <div class="plan pro reveal d2">
+              <span class="plan-badge">★ Recomendado</span>
+              <div class="plan-name">
+                <svg
+                  class="crown"
+                  viewBox="0 0 24 24"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path d="M2 18h20l-1.5-9-5 4L12 6 8.5 13l-5-4z" />
+                </svg>
+                Pro
+              </div>
+              <div class="plan-price">
+                <span class="amt">S/ 4.90</span><span class="per">/ mes</span>
+              </div>
+              <p class="plan-tag">
+                Vende más rápido, gana visibilidad y navega sin distracciones.
+              </p>
+              <ul class="plan-feats">
+                <li>
+                  <span class="pf-ic pf-yes"
+                    ><svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <polyline points="20 6 9 17 4 12" /></svg
+                  ></span>
+                  <b>Todo lo del plan Gratuito, incluido</b>
+                </li>
+                <li>
+                  <span class="pf-ic pf-yes"
+                    ><svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <polyline points="20 6 9 17 4 12" /></svg
+                  ></span>
+                  <b>Sin anuncios:</b> experiencia 100% limpia
+                </li>
+                <li>
+                  <span class="pf-ic pf-yes"
+                    ><svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <polyline points="20 6 9 17 4 12" /></svg
+                  ></span>
+                  <b>Destaca tus publicaciones</b> en el feed
+                </li>
+                <li>
+                  <span class="pf-ic pf-yes"
+                    ><svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <polyline points="20 6 9 17 4 12" /></svg
+                  ></span>
+                  Mayor visibilidad y alcance en tus anuncios
+                </li>
+                <li>
+                  <span class="pf-ic pf-yes"
+                    ><svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <polyline points="20 6 9 17 4 12" /></svg
+                  ></span>
+                  Insignia Pro que refuerza tu confianza
+                </li>
+                <li>
+                  <span class="pf-ic pf-yes"
+                    ><svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <polyline points="20 6 9 17 4 12" /></svg
+                  ></span>
+                  Prioridad en resultados de búsqueda
+                </li>
+              </ul>
+              <a
+                class="btn btn-gold btn-block"
+                href="https://play.google.com/store/apps/details?id=com.unsa.market"
+                target="_blank"
+                rel="noopener"
+                >Hazte Pro</a
+              >
+            </div>
+          </div>
+          <p class="pricing-note">
+            Precio del plan Pro referencial y configurable · Sin permanencia ·
+            Cancela cuando quieras
+          </p>
+        </div>
+      </section>
+
+      <!-- ============ FAQ ============ -->
+      <section class="section-pad" id="faq">
+        <div class="container">
+          <div class="section-head center reveal">
+            <span class="eyebrow">Preguntas frecuentes</span>
+            <h2 class="section-title">Resolvemos tus dudas</h2>
+          </div>
+
+          <div class="faq-wrap">
+            <div class="faq-item reveal">
+              <button class="faq-q" aria-expanded="false">
+                <span>¿Quién puede usar UNSA Market?</span
+                ><span class="fq-icon"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                  >
+                    <line x1="12" y1="5" x2="12" y2="19" />
+                    <line x1="5" y1="12" x2="19" y2="12" /></svg
+                ></span>
+              </button>
+              <div class="faq-a">
+                <p>
+                  Exclusivamente estudiantes de la Universidad Nacional de San
+                  Agustín. El registro solo es posible con un correo
+                  institucional válido <b>@unsa.edu.pe</b>, lo que garantiza una
+                  comunidad 100% verificada.
+                </p>
+              </div>
+            </div>
+            <div class="faq-item reveal">
+              <button class="faq-q" aria-expanded="false">
+                <span>¿La aplicación tiene algún costo?</span
+                ><span class="fq-icon"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                  >
+                    <line x1="12" y1="5" x2="12" y2="19" />
+                    <line x1="5" y1="12" x2="19" y2="12" /></svg
+                ></span>
+              </button>
+              <div class="faq-a">
+                <p>
+                  No. Puedes descargarla y usarla gratis con acceso completo a
+                  todas las funciones. El plan gratuito incluye anuncios dentro
+                  de la app; el plan Pro los elimina y te permite destacar tus
+                  publicaciones.
+                </p>
+              </div>
+            </div>
+            <div class="faq-item reveal">
+              <button class="faq-q" aria-expanded="false">
+                <span>¿Qué diferencia al plan Pro del gratuito?</span
+                ><span class="fq-icon"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                  >
+                    <line x1="12" y1="5" x2="12" y2="19" />
+                    <line x1="5" y1="12" x2="19" y2="12" /></svg
+                ></span>
+              </button>
+              <div class="faq-a">
+                <p>
+                  El plan Pro elimina los anuncios y te da la posibilidad de
+                  destacar tus publicaciones para obtener mayor visibilidad y
+                  alcance, además de una insignia Pro y prioridad en las
+                  búsquedas. Ideal si vendes con frecuencia u ofreces tutorías.
+                </p>
+              </div>
+            </div>
+            <div class="faq-item reveal">
+              <button class="faq-q" aria-expanded="false">
+                <span>¿Cómo sé si un vendedor es confiable?</span
+                ><span class="fq-icon"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                  >
+                    <line x1="12" y1="5" x2="12" y2="19" />
+                    <line x1="5" y1="12" x2="19" y2="12" /></svg
+                ></span>
+              </button>
+              <div class="faq-a">
+                <p>
+                  Cada perfil está vinculado al nombre real del estudiante y a
+                  su historial de ventas. El sistema de valoraciones con
+                  estrellas y reseñas escritas de otros compañeros te permite
+                  validar la reputación antes de concretar cualquier
+                  transacción.
+                </p>
+              </div>
+            </div>
+            <div class="faq-item reveal">
+              <button class="faq-q" aria-expanded="false">
+                <span>¿Puedo ofrecer tutorías y no solo productos?</span
+                ><span class="fq-icon"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                  >
+                    <line x1="12" y1="5" x2="12" y2="19" />
+                    <line x1="5" y1="12" x2="19" y2="12" /></svg
+                ></span>
+              </button>
+              <div class="faq-a">
+                <p>
+                  Sí. El "Feed Doble" separa las "Cosas" (objetos físicos) de
+                  las "Habilidades" (servicios académicos). Puedes crear un
+                  perfil de tutor con tus áreas de dominio, semestre cursado y
+                  tarifa por hora.
+                </p>
+              </div>
+            </div>
+            <div class="faq-item reveal">
+              <button class="faq-q" aria-expanded="false">
+                <span>¿Dónde se realizan las entregas?</span
+                ><span class="fq-icon"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                  >
+                    <line x1="12" y1="5" x2="12" y2="19" />
+                    <line x1="5" y1="12" x2="19" y2="12" /></svg
+                ></span>
+              </button>
+              <div class="faq-a">
+                <p>
+                  Dentro del propio campus. Los intercambios se coordinan por el
+                  chat interno y se ejecutan en puntos seguros como la
+                  biblioteca, los cafetines o los pabellones de tu facultad.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ CTA FINAL ============ -->
+      <section class="section-pad cta-band">
+        <div class="container">
+          <div class="cta-inner reveal">
+            <h2>Tu marketplace universitario<br />te está esperando</h2>
+            <p>
+              Únete a la comunidad de estudiantes que compran, venden y aprenden
+              con confianza. Descarga UNSA Market hoy.
+            </p>
+            <div class="cta-actions">
+              <a
+                class="gplay"
+                href="https://play.google.com/store/apps/details?id=com.unsa.market"
+                target="_blank"
+                rel="noopener"
+              >
+                <svg viewBox="0 0 512 512" aria-hidden="true">
+                  <path
+                    fill="#EA4335"
+                    d="M325 256 79 24C67 34 60 49 60 68v376c0 19 7 34 19 44l246-232z"
+                  />
+                  <path
+                    fill="#FBBC04"
+                    d="M404 199 326 154l-70 66 70 66 79-45c22-13 22-29-1-42z"
+                  />
+                  <path
+                    fill="#4285F4"
+                    d="M79 468c8 7 19 8 32 1l215-125-70-66L79 468z"
+                  />
+                  <path
+                    fill="#34A853"
+                    d="M326 154 111 43c-13-7-24-6-32 1l247 232 70-66z"
+                  />
+                </svg>
+                <span class="gplay-txt"
+                  ><span class="gplay-small">Disponible en</span
+                  ><span class="gplay-big">Google Play</span></span
+                >
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <div>
+            <a href="#top" class="brand"
+              ><img src="assets/img/icon.png" alt="UNSA Market" /><span
+                >UNSA Market<span class="brand-sub"
+                  >Marketplace universitario</span
+                ></span
+              ></a
+            >
+            <p class="footer-about">
+              El ecosistema seguro de compra, venta y tutorías exclusivo para la
+              comunidad de la Universidad Nacional de San Agustín. Compra a
+              quién confías.
+            </p>
+          </div>
+          <div class="footer-col">
+            <h4>Producto</h4>
+            <a href="#caracteristicas">Características</a>
+            <a href="#accion">La app</a>
+            <a href="#como-funciona">Cómo funciona</a>
+            <a href="#planes">Planes</a>
+          </div>
+          <div class="footer-col">
+            <h4>Recursos</h4>
+            <a href="#faq">Preguntas frecuentes</a>
+            <a href="#planes">Plan Pro</a>
+            <a
+              href="https://play.google.com/store/apps/details?id=com.unsa.market"
+              target="_blank"
+              rel="noopener"
+              >Google Play</a
+            >
+          </div>
+          <div class="footer-col">
+            <h4>Descarga</h4>
+            <a
+              href="https://play.google.com/store/apps/details?id=com.unsa.market"
+              target="_blank"
+              rel="noopener"
+              >Android</a
+            >
+            <a href="#top">Volver arriba</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span
+            >© <span id="year">2026</span> UNSA Market · Arequipa, Perú</span
+          >
+          <span class="made">Hecho para la comunidad agustina 🎓</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js" defer></script>
+  </body>
 </html>
