@@ -8,7 +8,7 @@ Sitio: [unsamarket.vercel.app](https://unsamarket.vercel.app/)
 
 ## Secciones
 
-Portada con el botón de descarga, características de la app en tarjetas, pantallas reales, el uso paso a paso, los planes Gratis y Pro y preguntas frecuentes.
+Portada con el botón de descarga, características de la app en tarjetas, pantallas reales, el uso paso a paso, los planes Gratuito y Pro y preguntas frecuentes.
 
 ![Características de la app](docs/caracteristicas.jpg)
 
